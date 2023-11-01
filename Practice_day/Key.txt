@@ -1,0 +1,12 @@
+____________________________Key___________________
+
+The cell of first column and first cell of table is key.
+Key is 3 classes
+    i) Primary key
+    ii) Foreign key
+    iii) composite key
+
+i) If all data of a field are unique than this key is primary key
+ii) If a key is another table's primary key than this is called foreign key.
+iii) If we create a primary key by using 2 or more key than the pair of these is composite key.
+

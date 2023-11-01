@@ -1,0 +1,10 @@
+i)
+    Data isn't meaningful
+    Information is meaningful.
+ii)
+    Data is not organize
+    Information is organize
+iii)
+    Data is just a value which can't give meaningful about anything individually
+    Information give meaningful about anything individually.
+    

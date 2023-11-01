@@ -1,0 +1,80 @@
+Database creating syntax : CREATE Database_name
+# To access database we must use
+            USE Database_name
+
+# Do Create TABLE: i) we must use 'USE" Database_name than:
+                                CREATE TABLE Table_name(
+                                    #for char Roll CHAR(expected_digit),
+                                    #for string Name VARCHAR(expected_char_limit),
+                                    # for float  Marks DOUBLE
+                                )
+
+# Inserting into table syntax:
+INSERT INTO Table_name
+(key1, key2, key3, ... key_N) values (value1, value2, value3, ... value_n);
+
+
+TO Update  we need to modify save mode 
+
+Update syntax:
+    set SQL_SAFE_UPDATES = 0;
+    UPDATE Table_name
+    set key1 = value1
+    Where key2 = value2
+
+
+    set SQL_SAFE_UPDATES = 1;
+
+Delete syntax:
+    Delete form Table_name
+    where key = value1
+
+
+
+                    MODUle 3
+                    CONSTRAINTS
+
+use constraints;
+
+CREATE TABLE STUDENT(
+	NAME varchar(50) NOT NULL,
+    ROLL CHAR(4) PRIMARY KEY,
+    EMAIL VARCHAR(30) UNIQUE,
+    ADDRESS VARCHAR(200),
+    AGE INT CHECK(AGE>10)
+);
+
+
+Composite Primary key Creating syntax:
+    Primary_key(key1, key2, .... keyN)
+
+
+
+Foreign key creating syntax:
+    Foreign Key (Present_Table_key) References Table_2(Table_2_Key);
+
+
+____________________Alter table (Update column_name, delete column,  add new column, change column data type)____________________Alter
+
+#########ADD New Row Syntax:
+                Alter Table Table_Name ADD Column Column_name Column data_type
+#Drop Column syntax:
+        Alter table table_name Drop Column column_name;
+___________________Rename  Table Name _______________________
+
+RENAME TABLE current_table_name TO new_table_name;
+
+
+
+########_____________Column rename process  _______________________
+-- ____ Adding a new column with the new name______
+
+ALTER TABLE Table_name ADD Column column_name data_type;
+
+-- Copying data from the old column to the new column
+UPDATE Table_name
+SET column_name = old_column_name;
+
+-- Dropping the old column
+ALTER TABLE table_name
+DROP COLUMN old_column_name;
